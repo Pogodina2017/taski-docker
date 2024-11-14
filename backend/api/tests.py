@@ -1,7 +1,6 @@
 from http import HTTPStatus
 
 from django.test import Client, TestCase
-
 from api import models
 
 
@@ -22,4 +21,3 @@ class TaskiAPITestCase(TestCase):
         self.assertTrue(
             models.Task.objects.filter(title='Test').exists()
         )
-
